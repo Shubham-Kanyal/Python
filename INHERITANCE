@@ -1,0 +1,44 @@
+# AFTER LEARNING ABOUT THE BASICS OF OOPS AND THE IMPORTANCE OF OOPS IN EVERYDAY LOFE, LET US NOW DIVE DEEP INTO ITS VERY-MANY FEATURES.
+# 1. INHERITANCE
+
+# JUST LIKE THE TITLE SUGGESTS, 'INHERITANCE' IN PYTHON WORKS JUST AS IT WOULD IN REAL LIFE. LET'S SAY I(LET US ASSUME MY NAME TO BE 'ABC') HAVE A CHILD NAMED 'X'. IF I('ABC') HAVE SOME BODY FEATURES LIKE HAVING DARK COMPLEXION, BEING OVER 6'2", THEN, MY CHILD 'X' WOULD ALSO ADOPT SOME OF MY FEATURES, THAT I MAY HAVE INHERITED FROM MY ELDER GENERATION.
+# LET US HAVE A CLOSER LOOK AT THIS CONCEPT IN PYTHON.
+
+class Polygon:
+  def __init__(self, sides):
+      self.sides = sides
+      
+  def Display_Information(self):
+      print('A Polygon is a 2-D Shape with only Straight Lines')
+      
+  def Get_Perimeter(self):
+      perimeter = sum(self.sides)
+      return perimeter
+      
+class Triangle(Polygon):              #PLEASE NOTE THAT THE CLASS NAME INSIDE THE PARENTHESES ['()'] IS CALLED 'BASE/PARENT CLASS', AND THE NEW CLASS IS CALLED                                                   'DERIVED/CHILD CLASS'
+    def Display_Information(self):
+        print('A Triangle is a 2-D Figure with 3 Edges.')
+  
+# TIME TO CALL THESE TWO CLASSES, AND OBSERVE THE 'INHERITED METHOD(FUNCTION)--> "Display_Information" '. 
+
+t1 = Triangle([3, 4, 5])
+print('Perimeter Of The Triangle: ', t1.Get_Perimeter())
+t1.DisplaY_Information()
+
+[NOTE THAT THE METHOD(FUNCTION) 'DisplaY_Information' IS PRESENT IN BOTH THE CLASSES]
+
+#___________________________________________________________________________________________________________________________________________________________________________
+⬛⬛⬛⬛⬛⬛⬛    ⬛             ⬛  ⬛⬛⬛⬛⬛⬛⬛ ⬛⬛⬛⬛⬛⬛⬛   ⬛             ⬛ ⬛⬛⬛⬛⬛⬛⬛
+⬛             ⬛   ⬛             ⬛         ⬛         ⬛             ⬛   ⬛             ⬛       ⬛
+⬛             ⬛   ⬛             ⬛         ⬛         ⬛             ⬛   ⬛             ⬛       ⬛
+⬛             ⬛   ⬛             ⬛         ⬛         ⬛⬛⬛⬛⬛⬛⬛   ⬛             ⬛        ⬛
+⬛             ⬛   ⬛             ⬛         ⬛         ⬛                  ⬛             ⬛        ⬛
+⬛             ⬛   ⬛             ⬛         ⬛         ⬛                  ⬛             ⬛        ⬛
+⬛             ⬛   ⬛             ⬛         ⬛         ⬛                  ⬛             ⬛        ⬛
+⬛⬛⬛⬛⬛⬛⬛    ⬛⬛⬛⬛⬛⬛⬛         ⬛         ⬛                  ⬛⬛⬛⬛⬛⬛⬛         ⬛
+
+Perimeter Of The Triangle: 12
+A Triangle is a 2-D Figure with 3 Edges.
+[NOTE: THE 't1' OBJECT DOESN'T DISPLAYS THE 'DISPLAY_INFORMATION' METHOD OF THE 'POLYGON' CLASS, BUT RATHER IT DISPLAYS ITS OWN 'DISPLAY_INFORMATION' METHOD. THIS IS TERMED AS "METHOD OVER-RIDING". ]
+
+#___________________________________________________________________________________________________________________________________________________________________________
