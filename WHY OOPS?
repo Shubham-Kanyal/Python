@@ -1,0 +1,17 @@
+# AFTER LEARNING ABOUT THE BASIC CONCEPTS OF OBJECT-ORIENTED PROGRAMMING IN PYTHON, LET US LEARN WHY EVEN USE OBJECT-ORIENTED PROGRAMMING IN THE FIRST PLACE?
+# WELL, USING OOPS, WE CAN EASILY CREATE OBJECTS AND CLASSES, WHICH HELP US IN 'CODE-REUSABILITY'. WHICH MEANS IT SIMPLIFIES COMPLEX PROBLEMS BY ORGANIZING CODE INTO 'OBJECTS' AND 'CLASSES', PROMOTING CODE RESUABILITY AND MAINTAINABILITY.
+# A MORE DETAILED DOCUMENTATION OF 'OOPS' IN PYTHON IS GIVEN BELOW-
+
+Object-Oriented Programming (OOP) is a programming paradigm that focuses on organizing code into objects, which are instances of classes. Python is an object-oriented programming language that provides support for OOP. Here are some reasons why using OOP in Python can be beneficial:
+
+Modularity and code reusability: OOP allows you to break down complex problems into smaller, more manageable modules called classes. These classes encapsulate data and behavior, making the code easier to understand, maintain, and reuse. You can create instances of classes (objects) and use them throughout your code, promoting code reusability.
+
+Encapsulation: OOP allows you to encapsulate data and methods within a class, controlling access to them through public and private modifiers. Encapsulation helps in data protection and prevents unauthorized access or modification, enhancing security and maintaining data integrity.
+
+Abstraction: OOP encourages abstraction by providing a clear separation between the interface (how an object can be used) and the implementation (how it works internally). This allows you to focus on using objects without worrying about their internal complexities, resulting in more concise and maintainable code.
+
+Inheritance: Inheritance is a fundamental concept in OOP that allows you to create new classes (derived classes) from existing classes (base or parent classes). This promotes code reuse and helps in creating hierarchical relationships between classes, enabling you to inherit and extend the functionality of existing classes.
+
+Polymorphism: Polymorphism allows objects of different classes to be treated as objects of a common base class. This enables you to write code that can work with objects of different types, enhancing flexibility and extensibility.
+
+By utilizing OOP concepts in Python, you can create well-structured, modular, and reusable code, leading to improved code quality, maintainability, and scalability. However, it's important to note that OOP is not the only programming paradigm, and its use depends on the nature of the problem and the specific requirements of the project.
