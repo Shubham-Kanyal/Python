@@ -7,6 +7,10 @@
 # 5. ENCAPSULATION
 # 6. DATA ABSTRACTION
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+NOTE THAT IN OBJECT-ORIENTED PROGRAMMING, THE FUNCTIONS ARE CALLED "METHODS" .
+
+# --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # TO GET A BETTER UNDERSTANDING ABOUT PYTHON OOPS, LET US HAVE A LOOK AT THE FOLLOWING CODE SNIPPET BELOW:
 
 Class Student:
