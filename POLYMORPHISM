@@ -1,0 +1,47 @@
+# AFTER LEARNING CLASS INHERITANCE, 'POLYMORPHISM' WOULD BE A CAKE WALK. LET'S DIVE RIGHT IN!
+# 'POLYMORPHISM' CONSISTS OF 2 WORDS--> 'POLY' MEANING "MANY" & 'MORPH' MEANING "FORMS". SO, POLYMORPHISM LETS A CHILD CLASS METHOD TO HAVE THE SAME NAME AS THE PATENT CLASS METHOD. THIS IS TERMED AS "METHOD OVER-RIDING".
+#POLYMORPHISM IS OF 2 TYPES---> i) CLASS POLYMORPHISM
+                              ii) INHERITED CLASS POLYMORPHISM
+
+LET'S HAVE A LOOK AT AN EXAMPLE GIVEN BELOW-
+
+#-------------------------------------------------------------------------------CLASS POLYMORPHISM--------------------------------------------------------------------------
+
+Class Car:
+  def __init__(self, brand, model):
+        self.brand = brnad
+        self.model = model
+        
+  def move(self):
+      print("DRIVE")
+      
+class Boat:
+  def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+        
+  def move(self):
+      print("SAIL")
+      
+#NOW, LET US CALL THESE 2 CLASSES AND SEE THE RESULTS WHEN WE CALL THE 'SAME-NAME-METHOD' NAMED "move".
+
+car_1 = Car("Rolls Royce", "Ghost")
+boat_1 = Boat("Ibizia", "Touring 20")
+
+for x in (car_1, boat_1):
+    x.move()
+
+#___________________________________________________________________________________________________________________________________________________________________________
+🟨🟨🟨🟨🟨🟨🟨    🟨             🟨  🟨🟨🟨🟨🟨🟨🟨 🟨🟨🟨🟨🟨🟨🟨   🟨             🟨 🟨🟨🟨🟨🟨🟨🟨
+🟨             🟨   🟨             🟨         🟨         🟨             🟨   🟨             🟨       🟨
+🟨             🟨   🟨             🟨         🟨         🟨             🟨   🟨             🟨       🟨
+🟨             🟨   🟨             🟨         🟨         🟨🟨🟨🟨🟨🟨🟨   🟨             🟨        🟨
+🟨             🟨   🟨             🟨         🟨         🟨                  🟨             🟨        🟨
+🟨             🟨   🟨             🟨         🟨         🟨                  🟨             🟨        🟨
+🟨             🟨   🟨             🟨         🟨         🟨                  🟨             🟨        🟨
+🟨🟨🟨🟨🟨🟨🟨    🟨🟨🟨🟨🟨🟨🟨         🟨         🟨                  🟨🟨🟨🟨🟨🟨🟨         🟨
+    
+DRIVE 
+SAIL
+#___________________________________________________________________________________________________________________________________________________________________________
+#------------------------------------------------------------------------INHERITED CLASS POLYMORPHISM-----------------------------------------------------------------------
